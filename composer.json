@@ -1,0 +1,33 @@
+{
+    "name": "mmerlijn/forms",
+    "description": "Advanced form application for health care",
+    "type": "project",
+    "require": {
+        "illuminate/support": "9.x-dev",
+        "php": ">7.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Menno",
+            "email": "menno@mmerlijn.nl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "7.0.x-dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "mmerlijn\\forms\\FormsServiceProvider"
+            ]
+
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "mmerlijn\\forms\\": "src/"
+        }
+    }
+}
