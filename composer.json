@@ -1,10 +1,11 @@
 {
     "name": "mmerlijn/forms",
-    "description": "Advanced form application for health care",
+    "description": "Advanced laravel form application for health care",
     "type": "project",
     "require": {
-        "illuminate/support": "9.x-dev",
-        "php": ">7.4"
+        "php": "^7.4|^8.0",
+        "mmerlijn/blade-components": "dev-master",
+        "mmerlijn/msg": "dev-master"
     },
     "license": "MIT",
     "authors": [
@@ -15,7 +16,11 @@
     ],
     "minimum-stability": "dev",
     "require-dev": {
-        "orchestra/testbench": "7.0.x-dev"
+        "illuminate/support": "8.x-dev",
+        "orchestra/testbench": "6.x-dev",
+        "phpunit/phpunit": "9.5.x-dev",
+        "livewire/livewire": "dev-master",
+        "spatie/laravel-permission": "dev-master"
     },
     "extra": {
         "laravel": {
@@ -28,6 +33,11 @@
     "autoload": {
         "psr-4": {
             "mmerlijn\\forms\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mmerlijn\\forms\\tests\\": "tests"
         }
     }
 }
