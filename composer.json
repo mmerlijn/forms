@@ -20,7 +20,7 @@
         "orchestra/testbench": "6.x-dev",
         "phpunit/phpunit": "9.5.x-dev",
         "livewire/livewire": "dev-master",
-        "spatie/laravel-permission": "dev-master"
+        "spatie/laravel-permission": "dev-main"
     },
     "extra": {
         "laravel": {
